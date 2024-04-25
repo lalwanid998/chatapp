@@ -6,7 +6,7 @@ import Chat from "./component/Chat/Chat";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="chatapp">
         <Routes>
           <Route exact path="/" Component={Join}></Route>
           <Route path="/chat" Component={Chat}></Route>
